@@ -1,0 +1,22 @@
+<div th:fragment="header"
+     xmlns:th="http://www.thymeleaf.org"
+     xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <header>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+            <h5 class="my-0 mr-md-auto font-weight-normal">Job Hunters</h5>
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark" th:href="@{/}">Главная</a>
+                <a class="p-2 text-dark" th:href="@{/resume}">Мои резюме</a>
+                <a class="p-2 text-dark" th:href="@{/vacancy}">Вакансии</a>
+
+
+
+                <form class="form-inline my-2 my-lg-0" action="#" method="post">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="#">Вход</a>
+                    <button class="btn btn-outline-success my-2 my-sm-0">Выход</button>
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="#">Регистрация</a>
+                </form>
+            </nav>
+        </div>
+    </header>
+</div>
